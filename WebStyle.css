@@ -34,9 +34,18 @@
 			padding:5px;
 		}
 		.guide {
+			font-size:20px;
+			text-align:center;
+		}
+		.guide ul {
 			list-style-type:none;
 			margin:0;
 			padding:0;
+			overflow:hidden;
+			display:inline-block;
+		}
+		.guide li {
+			float:left;
 		}
 		.guide a:link,a:visited {
 			display:block;
@@ -45,8 +54,9 @@
 			width:180px;
 			background-color:#bebebe;
 			text-align:center;
-			padding-bottom:50px;
-			padding-top:50px;
+			padding:10px;
+			padding-top:20px;
+			padding-bottom:20px;
 			text-decoration:none;
 			text-transform:uppercase;
 		}

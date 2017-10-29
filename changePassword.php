@@ -67,12 +67,12 @@
  	}
 ?>
 
-<body>
+<body style='margin:0 auto;'>
 	<div class='header'>
 		<h1>Welcome to GuestBook</h1>
 	</div>
 	
-	<div style='text-align:center;height:755px;padding:10px;font-size:17px;'>
+	<div style='text-align:center;height:762px;padding:10px;font-size:17px;'>
 		<form accept-charset="UTF-8" action="<?php echo $_SERVER['PHP_SELF'];?>" method='post'>
 			<h2>Change Password</h2>
 			<fieldset style='width:260px;border-width:5px;padding:20px;margin:0px auto;'>
@@ -98,7 +98,7 @@
 						<input type='submit' value='Submit'>
 					</div>
 			</fieldset>
-			<h3><a style='text-decoration:none;color:#0366d6;' href='index1.php'>Sign in now</a></h3>
+			<h3><a style='text-decoration:none;color:#0366d6;' href='index.php'>Sign in now</a></h3>
 		</form>
 	</div>
 	

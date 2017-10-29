@@ -1,22 +1,9 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign in</title>
-	<link rel='stylesheet' type='text/css' href='webstyle1.css'>
-	<style>
-	form span {
-		color:red;
-	}
-	label {
-		font-size:15px;
-	}
-	input {
-		margin-top:8px;
-		font-size:19px;
-	}
-	</style>
-</head>
-
 <?php
 $name_err=$paswd_err="";
 $name=$paswd="";
@@ -40,30 +27,20 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 		}
 		$command="SELECT * FROM User WHERE UserName='".$_POST['UserName']."' ";
 		if(!($result=mysql_query($command,$con))){
-			echo $row['UserName']."     ".$row['Password'];
 			echo "<script language='JavaScript'>alert('Username or Password is wrong!')</script>";
 		}else{
 			$row=mysql_fetch_array($result);
 			if($row['Password']!=$_POST['Password']){
-				echo $row['UserName']."     ".$row['Password'];
 				echo "<script language='JavaScript'>alert('Username or Password is wrong!')</script>";
 			}else{
 				echo "<script language='JavaScript'>alert('Sign in successfully!')</script>";
-				echo "<body>
-						<div class='header'>
-							<h1>Welcome to GuestBook</h1>
-						</div>
-
-						<div style='text-align:center;height:755px;padding:10px;font-size:17px;'>
-							<h2 style='text-align:center'>Sign in to GuestBook</h2><br/>
-		
-						</div>
-	
-						<div class='footer'>
-							<h3>Powered By Zewei Zhang</h3>
-						</div>
-			  		</body>";
-                	 	 die();
+				
+				$_SESSION['visitor']="User";
+				$_SESSION['name']=$name;
+			
+				echo "<meta http-equiv='refresh' content='1;url=user_write.php'>
+				           </head><body></body></html>" ;
+                	 	die();
 			}
 		}	
 	}
@@ -73,13 +50,28 @@ function customError($errno, $errstr)
  	//echo 'Error:'.$errno.$errstr;
  }
 ?>
+	<title>Sign in</title>
+	<link rel='stylesheet' type='text/css' href='webstyle1.css'>
+	<style>
+	form span {
+		color:red;
+	}
+	label {
+		font-size:15px;
+	}
+	input {
+		margin-top:8px;
+		font-size:19px;
+	}
+	</style>
+</head>
 
-<body>
+<body style='margin:0 auto;'>
 	<div class='header'>
 		<h1>Welcome to GuestBook</h1>
 	</div>
 
-	<div style='text-align:center;height:755px;padding:10px;font-size:17px;'>
+	<div style='text-align:center;height:762px;padding:10px;font-size:17px;'>
 		<h2>Sign in to GuestBook</h2><br/>
 		<form accept-charset="UTF-8" action="<?php echo $_SERVER['PHP_SELF'];?>" method='post'>
 			<fieldset style='width:250px;border-width:5px;padding:20px;margin:0px auto;'>
