@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rigister</title>
+	<title>Change password</title>
 	<link rel='stylesheet' type='text/css' href='webstyle1.css'>
 	<style>
 	form span {
@@ -20,9 +20,13 @@
 <?php
 	set_error_handler("customError");
 	$name_err=$oldpaswd_err=$paswd_err1=$paswd_err2="";
+	$name="";
 	if($_SERVER['REQUEST_METHOD']=='POST'){
-		if($_POST['UserName']=="")
+		if($_POST['UserName']==""){
 			$name_err='*';
+		}else{
+			$name=$_POST['UserName'];
+		}
 		if($_POST['Password1']=="")
 			$paswd_err1='*';
 		if($_POST['Password2']=="")
@@ -75,7 +79,7 @@
 				<!--<legend>Input your sign in information</legend>-->
 				<div style='width:260px;text-align:left;margin:0px auto;'>
 					<label for='UserName'>Username:</label>
-						<input type='text' name='UserName' style='margin-bottom:15px;'><span style='font-size:15px;'><?php echo $name_err;?></span>
+						<input type='text' name='UserName' style='margin-bottom:15px;' value="<?php echo $name; ?>"><span style='font-size:15px;'><?php echo $name_err;?></span>
 					<label for='OldPassword'>
 						Old password:
 					</label>

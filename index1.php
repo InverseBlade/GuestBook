@@ -19,12 +19,19 @@
 
 <?php
 $name_err=$paswd_err="";
+$name=$paswd="";
 set_error_handler("customError");
 if($_SERVER['REQUEST_METHOD']=="POST"){
-	if($_POST['UserName']=="")
+	if($_POST['UserName']==""){
 		$name_err='*'.'Name is required';
-	if($_POST['Password']=="")
+	}else{
+		$name=$_POST['UserName'];
+	}
+	if($_POST['Password']==""){
 		$paswd_err='*'.'Password is required';
+	}else{
+		$paswd=$_POST['Password'];
+	}	
 	if($name_err=="" && $paswd_err==""){
 		$con = mysql_connect("localhost","root","acs977282") or die('Could not connect:'.mysql_error());
 		
@@ -42,23 +49,23 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 				echo "<script language='JavaScript'>alert('Username or Password is wrong!')</script>";
 			}else{
 				echo "<script language='JavaScript'>alert('Sign in successfully!')</script>";
+				echo "<body>
+						<div class='header'>
+							<h1>Welcome to GuestBook</h1>
+						</div>
+
+						<div style='text-align:center;height:755px;padding:10px;font-size:17px;'>
+							<h2 style='text-align:center'>Sign in to GuestBook</h2><br/>
+		
+						</div>
+	
+						<div class='footer'>
+							<h3>Powered By Zewei Zhang</h3>
+						</div>
+			  		</body>";
+                	 	 die();
 			}
 		}	
-		echo "<body>
-				<div class='header'>
-					<h1>Welcome to GuestBook</h1>
-				</div>
-
-				<div style='text-align:center;height:755px;padding:10px;font-size:17px;'>
-					<h2 style='text-align:center'>Sign in to GuestBook</h2><br/>
-		
-				</div>
-	
-				<div class='footer'>
-					<h3>Powered By Zewei Zhang</h3>
-				</div>
-			  </body>";
-                die();
 	}
 }
 function customError($errno, $errstr)
@@ -79,12 +86,12 @@ function customError($errno, $errstr)
 				<!--<legend>Input your sign in information</legend>-->
 				<div style='width:250px;text-align:left;margin:0px auto;'>
 					<label for='UserName'>Username:</label>
-						<input type='text' name='UserName' style='margin-bottom:15px;'><span style='font-size:15px;'><?php echo $name_err;?></span>
+						<input type='text' name='UserName' style='margin-bottom:15px;' value="<?php echo $name; ?>"><span style='font-size:15px;'><?php echo $name_err;?></span>
 					<label for='Password'>
 						Password:
-						<a class='guide' style='color:blue;font-size:10px;margin-left:67px;text-decoration:none;' href='./changePassword.php'>Change password</a>
+						<a style='color:blue;font-size:10px;margin-left:67px;text-decoration:none;' href='./changePassword.php'>Change password</a>
 					</label>
-						<input type='password' name='Password'><span style='font-size:15px;'><?php echo $paswd_err;?></span>
+						<input type='password' name='Password'><span style='font-size:15px;' value=""><?php echo $paswd_err;?></span>
 				</div>
 				<br/>
 					<div style='text-align:center;'>
