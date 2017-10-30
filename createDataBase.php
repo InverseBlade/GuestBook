@@ -4,6 +4,10 @@
 	<title>Sign up</title>
 	<link rel='stylesheet' type='text/css' href='webstyle.css'>
 	<style>
+	input {
+		float:left;
+		font-size:19px;
+	}
 	form span {
 		color:red;
 	}
@@ -32,14 +36,17 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 								       PRIMARY                               KEY(id),
 								       UserName                       varchar(15),
 								       Password                         varchar(15),
-								       Message                      varchar(1080)) default charset=utf8 ";
+								       RealName                       varchar(15),
+								       Email                               varchar(15),
+								       QQ                                  varchar(15),
+								       Hometown                     varchar(20)) default charset=utf8 ";
  		if(!mysql_query($command,$con)){
 			;
 		}
-		$command="INSERT INTO User(UserName,Password,Message)
-		                                       VALUES('$_POST[UserName]','$_POST[Password]','$_POST[Message]')";
+		$command="INSERT INTO User(UserName,Password,RealName,Email,QQ,Hometown)
+		                                       VALUES('$_POST[UserName]','$_POST[Password]',' ',' ',' ',' ' )";
 		if(!mysql_query($command,$con)){
-			;
+			echo "gg deisga!";
 		}
 		echo "<script language='JavaScript'>alert('Sign up successfully!')</script>";
 		echo "<body>
@@ -71,21 +78,28 @@ function customError($errno, $errstr)
 	</div>
 
 	<div style='text-align:center;height:755px;padding:10px;font-size:17px;'>
-		<h2 style='text-align:center'>Sign up to GuestBook</h2><br/>
-		<form style='text-align:center;' action="<?php echo $_SERVER['PHP_SELF'];?>" method='post'>
-			<fieldset style='width:500px;margin:0px auto;'>
-				<!--<legend>Input your sign in information</legend>-->
-				<div style='width:175px;text-align:left;margin:0px auto;'>
-					<p style='margin-bottom:7px;'>Username:</p>
-						<input type='text' name='UserName'><span style='font-size:15px;'><?php echo $name_err;?></span>
-					<p style='margin-bottom:7px;'>Password:</p>
-						<input type='password' name='Password'><span style='font-size:15px;'><?php echo $paswd_err;?></span>
-				</div>
-				<br/>
-					<div style='text-align:center;'>
-						<input type='submit' value='Sign up'>
-					</div>
-			</fieldset>
+		<h2>Sign up to GuestBook</h2><br/>
+		<form action="<?php echo $_SERVER['PHP_SELF'];?>" method='post'>
+				<table style='margin:0 auto;border-width:0px;' border='1' cellspacing='0' cellpadding='5px;'>
+					<tr>
+						<td><span>*</span>Username:</td><td colspan='3'><input type='text' name='UserName'></td>
+					</tr>
+					<tr>
+						<td><span>*</span>Name:</td><td><input type='text' name='Name'></td><td>QQ:</td><td><input type='text' name='QQ'></td>
+					</tr>
+					<tr>
+						<td>Email:</td><td><input type='text' name='Email'></td><td>From:</td><td><input type='text' name='Hometown'></td>
+					</tr>
+					<tr>
+						<td><span>*</span>Signature:</td><td><textarea style='font-size:17px;' name='Signature' rows='6' cols='25'></textarea></td><td>Head img:</td><td><input type='radio' name='Himg' checked><input type='radio' name='Himg'></td>
+					</tr>
+					<tr>
+						<td style='font-size:0px;padding:2' colspan='4'>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan='4'><input style='float:none;' type='submit' value='Sign up'></td>
+					</tr>
+				</table>
 		</form>
 	</div>
 	

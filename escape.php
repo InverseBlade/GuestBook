@@ -7,7 +7,7 @@ if(isset($_SESSION['visitor'])){
 <html>
 <head>
 <title>Sign out</title>
-<meta http-equiv=refresh content='1;url=index.php'/>
+<meta http-equiv=refresh content='0;url=index.php'/>
 </head>
 <body>
 <script language='JavaScript'>alert('Sign out sccessfully!')</script>

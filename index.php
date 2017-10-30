@@ -33,12 +33,12 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 			if($row['Password']!=$_POST['Password']){
 				echo "<script language='JavaScript'>alert('Username or Password is wrong!')</script>";
 			}else{
-				echo "<script language='JavaScript'>alert('Sign in successfully!')</script>";
+				//echo "<script language='JavaScript'>alert('Sign in successfully!')</script>";
 				
 				$_SESSION['visitor']="User";
 				$_SESSION['name']=$name;
 			
-				echo "<meta http-equiv='refresh' content='1;url=user_write.php'>
+				echo "<meta http-equiv='refresh' content='0;url=user_write.php'>
 				           </head><body></body></html>" ;
                 	 	die();
 			}
@@ -90,6 +90,7 @@ function customError($errno, $errstr)
 						<input type='submit' value='Sign in'>
 					</div>
 			</fieldset>
+			<h3><a style='text-decoration:none;color:#0366d6;' href='createDataBase.php'>Click me to sign up</a></h3>
 		</form>
 	</div>
 	

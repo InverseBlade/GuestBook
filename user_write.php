@@ -77,7 +77,7 @@ function customError($errno, $errstr)
 	</div>
 	
 	<div style='text-align:center;'>
-		<h2>GuestBook</h2><br/>
+		<h2 style='margin:0px;'>GuestBook</h2>
 		<form accept-charset="UTF-8" action="<?php echo $_SERVER['PHP_SELF'];?>" method='post'>
 			<fieldset style='width:800px;height:500px;padding:20px;text-align:center;margin:0 auto;border-width:5px;'>
 				<legend>Dear <?php echo $UserName; ?>, please write your message.</legend>
@@ -89,7 +89,10 @@ function customError($errno, $errstr)
 			</fieldset>
 		</form>
 	</div>
-	
+	<p style='margin:10px;'>&nbsp;</p>
+	<div class='footer'>
+		<h3>Powered By Zewei Zhang</h3>
+	</div>
 </body>
 </html>
 

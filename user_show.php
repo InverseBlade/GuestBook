@@ -73,7 +73,7 @@ function customError($errno, $errstr)
 	</div>
 	
 	<div style='text-align:center;'>
-		<h2>GuestBook</h2>
+		<h2 style='margin:5px;'>GuestBook</h2>
 		<?php
 			$con = mysql_connect('localhost','root','acs977282') or die('Could not connect:'.mysql_error());
 			mysql_query("set names 'utf8'",$con);
@@ -87,25 +87,32 @@ function customError($errno, $errstr)
 			if(!$row){
 				echo "<p>You don't have left an message at all.</p>";
 			}else{
+				$i=0;
 				do{
 					echo "<form accept-charset='UTF-8' action=\"".$_SERVER['PHP_SELF']."\" method='post'>
-						  	<fieldset style='width:750px;height:460px;padding:20px;text-align:center;margin:0 auto;border-width:5px;'>
+						  	<fieldset style='width:550px;height:360px;padding:10px;text-align:center;margin:0 auto;margin-bottom:15px;border-width:5px;'>
 								<legend>Dear ".$UserName.", you can rewrite your message here.</legend>
-								<div style='width:700px;margin:0 auto;text-align:left;'>
-									<label for='message'>Your message(below 1000 words):</label><span style='font-size:13px;margin-left:245px;color:black;'>Write at :".$row['time']."</span>
-									<textarea style='display:block;font-size:20px;' name='message' rows='15' cols='67'>".$row['Message']."</textarea>
+								<div style='width:550px;margin:0 auto;text-align:left;'>
+									<label for='message'>Your message(below 1000 words):</label><span style='font-size:13px;margin-left:90px;color:black;'>Write at :".$row['time']."</span>
+									<textarea style='display:block;font-size:20px;' name='message' rows='10' cols='50'>".$row['Message']."</textarea>
 								</div></br>
 								<input type='hidden' name='id' value='".$row['id']."'> 
-								<input type='radio' name='delete' value='yes'>Delete this message&nbsp;&nbsp;<input style='margin-left:50px;' type='radio' name='delete' value='no' checked>Don't delete
-								<p></p>
-								<input style='font-size:20px;' type='submit' value='Rewrite'>
+								<input type='radio' id='$i' name='delete' value='yes'><label for='$i'>Delete this message</label>&nbsp;&nbsp;";
+					$i++;
+					echo			"<input style='margin-left:50px;' type='radio' id='$i' name='delete' value='no' checked><label for='$i'>Don't delete</label>
+								<br/>
+								<input style='margin-top:15px;font-size:20px;' type='submit' value='Rewrite'>
 							</fieldset>
 						</form>";
+					$i++;
 				}while($row=mysql_fetch_array($result));
 			}
 		?>
 	</div>
 	
+	<div class='footer'>
+		<h3>Powered By Zewei Zhang</h3>
+	</div>
 </body>
 </html>
 
