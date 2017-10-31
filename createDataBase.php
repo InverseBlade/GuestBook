@@ -15,14 +15,24 @@
 </head>
 
 <?php
-$name_err=$paswd_err="";
+$UserName=$Password=$RealName=$Email=$QQ=$Hometown=$Signature="";
 set_error_handler("customError");
 if($_SERVER['REQUEST_METHOD']=="POST"){
-	if($_POST['UserName']=="")
-		$name_err='*'.'Name is required';
-	if($_POST['Password']=="")
-		$paswd_err='*'.'Password is required';
-	if($name_err=="" && $paswd_err==""){
+	if($_POST['UserName']!="")
+		$UserName=$_POST['UserName'];
+	if($_POST['Password']!="")
+		$Password=$_POST['Password'];
+	if($_POST['Name']!="")
+		$RealName=$_POST['Name'];
+	if($_POST['Email']!="")
+		$Email=$_POST['Email'];
+	if($_POST['QQ']!="")
+		$QQ=$_POST['QQ'];
+	if($_POST['Hometown']!="")
+		$Hometown=$_POST['Hometown'];
+	if($_POST['Signature']!="")
+		$Signature=$_POST['Signature'];
+	if($UserName!=""&&$Password!=""&&$Signature!=""){
 		$con = mysql_connect('localhost','root','acs977282') or die('Could not connect:'.mysql_error());
 		mysql_query("set names 'utf8'",$con);
 		
@@ -39,12 +49,13 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 								       RealName                       varchar(15),
 								       Email                               varchar(15),
 								       QQ                                  varchar(15),
-								       Hometown                     varchar(20)) default charset=utf8 ";
+								       Hometown                     varchar(20),
+								       Signature                        varchar(50)) default charset=utf8 ";
  		if(!mysql_query($command,$con)){
 			;
 		}
-		$command="INSERT INTO User(UserName,Password,RealName,Email,QQ,Hometown)
-		                                       VALUES('$_POST[UserName]','$_POST[Password]',' ',' ',' ',' ' )";
+		$command="INSERT INTO User(UserName,Password,RealName,Email,QQ,Hometown,Signature)
+		                                       VALUES('$_POST[UserName]','$_POST[Password]','$Name','$Email','$QQ','$Hometown','$Signature' )";
 		if(!mysql_query($command,$con)){
 			echo "gg deisga!";
 		}
@@ -64,6 +75,8 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 				</div>
 			  </body>";
                 die();
+	}else{
+		echo "<script language='JavaScript'>alert('Item with * is required!')</script>";
 	}
 }
 function customError($errno, $errstr)
@@ -77,7 +90,7 @@ function customError($errno, $errstr)
 		<h1>Welcome to GuestBook</h1>
 	</div>
 
-	<div style='text-align:center;height:755px;padding:10px;font-size:17px;'>
+	<div style='text-align:center;height:762px;padding:10px;font-size:17px;'>
 		<h2>Sign up to GuestBook</h2><br/>
 		<form action="<?php echo $_SERVER['PHP_SELF'];?>" method='post'>
 				<table style='margin:0 auto;border-width:0px;' border='1' cellspacing='0' cellpadding='5px;'>
