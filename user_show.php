@@ -67,6 +67,9 @@ function customError($errno, $errstr)
 				<a href="<?php echo $_SERVER['PHP_SELF'];?>">My Message</a>
 			</li>
 			<li>
+				<a href="user_square">Square</a>
+			</li>
+			<li>
 				<a href="escape.php">Sign out</a>
 			</li>
 		</ul>
@@ -81,7 +84,7 @@ function customError($errno, $errstr)
 			if(!mysql_select_db('GuestBook',$con)){
 				die("Couldn't select DataBase:".mysql_error());
 			}
-			$command="SELECT * FROM Message WHERE UserName='$UserName'";
+			$command="SELECT * FROM Message WHERE UserName='$UserName' ORDER BY Time DESC";
 			$result=mysql_query($command,$con);
 			$row=mysql_fetch_array($result);
 			if(!$row){
@@ -93,7 +96,7 @@ function customError($errno, $errstr)
 						  	<fieldset style='width:550px;height:360px;padding:10px;text-align:center;margin:0 auto;margin-bottom:15px;border-width:5px;'>
 								<legend>Dear ".$UserName.", you can rewrite your message here.</legend>
 								<div style='width:550px;margin:0 auto;text-align:left;'>
-									<label for='message'>Your message(below 1000 words):</label><span style='font-size:13px;margin-left:90px;color:black;'>Write at :".$row['time']."</span>
+									<label for='message'>Your message(below 1000 words):</label><span style='font-size:13px;margin-left:90px;color:black;'>Write at :".$row['Time']."</span>
 									<textarea style='display:block;font-size:20px;' name='message' rows='10' cols='50'>".$row['Message']."</textarea>
 								</div></br>
 								<input type='hidden' name='id' value='".$row['id']."'> 

@@ -15,6 +15,12 @@
 	form span {
 		color:red;
 	}
+	td {
+		padding:5px;
+		padding-left:15px;
+		padding-right:15px;
+		text-align:left;
+	}
 	</style>
 </head>
 
@@ -49,6 +55,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 		}else{
 			echo "<script language='JavaScript'>alert('Submit successfully!')</script>";
 		}
+		mysql_close();
 	}
 }
 function customError($errno, $errstr)
@@ -81,31 +88,33 @@ function customError($errno, $errstr)
 	
 	<div style='text-align:center;height:711px;'>
 		<h2 style='margin:0px;'>GuestBook</h2>
-		<form accept-charset="UTF-8" action="<?php echo $_SERVER['PHP_SELF'];?>" method='post'>
-			<fieldset style='width:800px;height:500px;padding:20px;text-align:center;margin:0 auto;border-width:5px;'>
-				<legend>Dear <?php echo $UserName; ?>, please write your message.</legend>
-				<div style='width:700px;margin:0 auto;text-align:left;'>
-					<label for='message'><span><?php echo $text_err; ?></span>Your message(below 1000 words):</label>
-					<textarea style='display:block;font-size:20px;' name='message' rows='18' cols='67'><?php echo $text; ?></textarea>
-				</div></br>
-				<input style='font-size:20px;' type='submit' value='submit'>
-			</fieldset>
-		</form>
+		<?php
+			$con = mysql_connect('localhost','root','acs977282') or die('Could not connect:'.mysql_error());
+			mysql_query("set names 'utf8'",$con);
+		
+			if(!mysql_select_db('GuestBook',$con)){
+				die("Couldn't select DataBase:".mysql_error());
+			}
+			$command=" SELECT * FROM Message ORDER BY Time DESC ";
+ 			$result=mysql_query($command,$con);
+			echo "<table border='1' style='margin:0 auto;' cellspacing='0'>";
+			while($row=mysql_fetch_array($result)){
+				$user=mysql_fetch_array(mysql_query("SELECT * FROM User WHERE UserName='{$row['UserName']}' "));
+				echo "<tr>";
+				echo "<td style='line-height:25px;width:187px;height:178px;' rowspan='3'>"."Name: ".$user['RealName']."<br/>From: $user[Hometown]"."</td>"."<td style='width:800px;'>"."Write at ".$row['Time']."</td>";
+				echo "</tr>";
+				
+				echo "<tr>";
+				echo "<td valign='top' style='height:117px;'>".$row['Message']."</td>";
+				echo "</tr>";
+				
+				echo "<tr>";
+				echo "<td>"."Email: ".$user['Email']."             "."QQ: ".$user['QQ']."</td>";
+				echo "</tr>";
+			}
+			echo "</table>";
+		?>
 	</div>
 
-	<div class='footer'>
-		<h3>Powered By Zewei Zhang</h3>
-	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
