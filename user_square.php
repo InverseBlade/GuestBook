@@ -72,7 +72,7 @@ function customError($errno, $errstr)
 	<div class='guide'>
 		<ul>
 			<li>
-				<a href="<?php echo $_SERVER['PHP_SELF'];?>">Write message</a>
+				<a href="user_write.php">Write message</a>
 			</li>
 			<li>
 				<a href="user_show.php">My Message</a>
