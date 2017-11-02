@@ -34,13 +34,17 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 				echo "<script language='JavaScript'>alert('Username or Password is wrong!')</script>";
 			}else{
 				//echo "<script language='JavaScript'>alert('Sign in successfully!')</script>";
-				
-				$_SESSION['visitor']="User";
-				$_SESSION['name']=$name;
-			
-				echo "<meta http-equiv='refresh' content='0;url=user_write.php'>
+				$_SESSION['name']=$name;	
+				if($name=='admin'){
+					$_SESSION['visitor']="Admin";
+					echo "<meta http-equiv='refresh' content='0;url=admin_delete_message.php'>
 				           </head><body></body></html>" ;
-                	 	die();
+				}else{
+					$_SESSION['visitor']="User";
+					echo "<meta http-equiv='refresh' content='0;url=user_write.php'>
+				           </head><body></body></html>" ;
+				}
+				die();
 			}
 		}	
 	}
