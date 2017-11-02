@@ -31,6 +31,8 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 		die("Couldn't select DataBase:".mysql_error());
 	}
 	if($delete=="yes"){
+		$command="DELETE FROM Comments WHERE Message='{$id}' ";
+		mysql_query($command,$con);
 		$command="DELETE FROM Message WHERE id='".$id."' ";
 		if(!mysql_query($command,$con)){
 			;
@@ -93,7 +95,7 @@ function customError($errno, $errstr)
 				$i=0;
 				do{
 					echo "<form accept-charset='UTF-8' action=\"".$_SERVER['PHP_SELF']."\" method='post'>
-						  	<fieldset style='width:550px;height:360px;padding:10px;text-align:center;margin:0 auto;margin-bottom:15px;border-width:5px;'>
+						  	<fieldset style='width:550px;height:360px;padding:10px;text-align:center;margin:0 auto;margin-bottom:15px;border-width:1px;'>
 								<legend>Dear ".$UserName.", you can rewrite your message here.</legend>
 								<div style='width:550px;margin:0 auto;text-align:left;'>
 									<label for='message'>Your message(below 1000 words):</label><span style='font-size:13px;margin-left:90px;color:black;'>Write at :".$row['Time']."</span>

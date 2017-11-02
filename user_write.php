@@ -82,11 +82,11 @@ function customError($errno, $errstr)
 	<div style='text-align:center;height:711px;'>
 		<h2 style='margin:0px;'>GuestBook</h2>
 		<form accept-charset="UTF-8" action="<?php echo $_SERVER['PHP_SELF'];?>" method='post'>
-			<fieldset style='width:800px;height:500px;padding:20px;text-align:center;margin:0 auto;border-width:5px;'>
+			<fieldset style='width:550px;height:400px;padding:20px;text-align:center;margin:0 auto;border-width:5px;'>
 				<legend>Dear <?php echo $UserName; ?>, please write your message.</legend>
-				<div style='width:700px;margin:0 auto;text-align:left;'>
+				<div style='width:450px;margin:0 auto;text-align:left;'>
 					<label for='message'><span><?php echo $text_err; ?></span>Your message(below 1000 words):</label>
-					<textarea style='display:block;font-size:20px;' name='message' rows='18' cols='67'><?php echo $text; ?></textarea>
+					<textarea style='display:block;font-size:18px;' name='message' rows='15' cols='50'><?php echo $text; ?></textarea>
 				</div></br>
 				<input style='font-size:20px;' type='submit' value='submit'>
 			</fieldset>
