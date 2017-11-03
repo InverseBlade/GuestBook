@@ -100,7 +100,7 @@ function customError($errno, $errstr)
 	<div style='text-align:center;height:711px;'>
 		<h2 style='margin:0px;'>GuestBook</h2>
 		<?php
-			$command=" SELECT * FROM Message ORDER BY Time DESC ";
+			$command=" SELECT * FROM Message ORDER BY Time ";
  			$result=mysql_query($command,$con);
 			$command="CREATE TABLE Comments(id int NOT NULL AUTO_INCREMENT,
 								       	         PRIMARY                               KEY(id),
@@ -130,7 +130,7 @@ function customError($errno, $errstr)
 				echo "<tr>";
 				echo "<td style='text-align:left;'>";
 				echo "Comments:<br/>";
-				$command="SELECT * FROM Comments WHERE Message='{$row['id']}' ";
+				$command="SELECT * FROM Comments WHERE Message='{$row['id']}' ORDER BY Time";
 				//$com:  comments     $com_row
 				$com=mysql_query($command,$con);
 				while($com_row=mysql_fetch_array($com)){
