@@ -1,0 +1,43 @@
+		body {
+			margin:0 auto;
+		}
+		div.header {
+			background-color:black;
+			color:white;
+			text-align:center;
+			padding:5px;
+		}
+		.nav {
+			float:left;
+			height:775px;
+			width:180px;
+			text-align:right;
+			padding:0;
+			background-color:#bebebe;
+		}
+		.section {
+			width:500px;
+			float:left;			
+			margin-left:0px;
+			padding:10px;
+			font-size:17px;
+		}
+		form span {
+			color:red;
+		}
+		form label {
+			margin:0;
+			padding:0;
+  		}
+		.footer {
+			background-color:black;
+			color:white;
+			clear:both;
+			text-align:center;
+			padding:5px;
+		}
+		.guide {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+		}
