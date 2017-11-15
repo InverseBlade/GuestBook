@@ -1,0 +1,27 @@
+{include file="Index/header" title="登录界面"/>}
+<div class='header'>
+    <h1>欢迎来到留言簿</h1>
+</div>
+
+<div style='text-align:center;height:762px;padding:10px;font-size:17px;'>
+    <h2>登录</h2><br/>
+    <form accept-charset="UTF-8" action="/index/Login/login" method='post'>
+        <fieldset style='width:250px;border-width:2px;padding:20px;margin:0px auto;text-align: center;'>
+            <div style='width:252px;text-align:left;margin:0px auto;'>
+                <label for='UserName'>用户名:</label>
+                <input type='text' name='UserName' style='margin-bottom:15px;' value=""><span style='font-size:15px;'>*</span>
+                <label for='Password'>
+                    密码:
+                    <a style='color:blue;font-size:10px;margin-left:150px;text-decoration:none;' href='/index/Modify/modify'>更改密码</a>
+                </label>
+                <input type='password' name='Password'><span style='font-size:15px;'>*</span>
+            </div>
+            <br/>
+            <div style='text-align:center;'>
+                <input type='submit' value='登录'>
+            </div>
+        </fieldset>
+        <h3><a style='text-decoration:none;color:#0366d6;' href='/index/Register/register'>立即注册</a></h3>
+    </form>
+</div>
+{include file="Index/footer"/}

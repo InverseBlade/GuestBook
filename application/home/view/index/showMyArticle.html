@@ -1,0 +1,27 @@
+{include file="index/header" title="我的留言"/}
+
+<div style="margin: 0 auto;width:850px;">
+    <table style="border-collapse: collapse;border: 1px solid #337ab7;word-break:break-all; word-wrap:break-all;" border="1">
+        <tr style="text-align: center">
+            <th style="width: 60px;">文章id</th>
+            <th style="width: 80px;">用户名</th>
+            <th style="width: 200px;">创建时间</th>
+            <th style="width: 200px;">更新时间</th>
+            <th style="width: 200px;padding: 20px;">留言内容</th>
+            <th style="width: 90px;">操作</th>
+        </tr>
+    {volist name="list" id="text"}
+        <tr style="text-align: center;" class="my_text">
+            <td>{$text.id}</td>
+            <td>{$nickname}</td>
+            <td>{$text.create_time}</td>
+            <td>{$text.update_time}</td>
+            <td style="text-align: left;">{$text.content}</td>
+            <td>
+                <a style="color:#337ab7;text-decoration: none" href="/editMyArticle/{$text.id}">修改</a> <span style="color: black">|</span>
+                <a style="color:#337ab7;text-decoration: none" href="/deleteMyArticle/{$text.id}">删除</a>
+            </td>
+        </tr>
+    {/volist}
+    </table>
+</div>

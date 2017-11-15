@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册界面</title>
+    <link rel='stylesheet' type='text/css' href="\static\webstyle1.css"/>
+    <style>
+        form span {
+            color:red;
+        }
+        label {
+            font-size:15px;
+        }
+        input {
+            margin-top:8px;
+            font-size:19px;
+        }
+    </style>
+</head>
+
+<body style='margin:0 auto;'>
+<div class='header'>
+    <h1>欢迎来到留言簿</h1>
+</div>
+
+<div style='text-align:center;height:762px;padding:10px;font-size:17px;'>
+    <h2>免费注册</h2><br/>
+    <form accept-charset="UTF-8" action="register/register" method='post'>
+        <table style='margin:0 auto;border-width:0px;' border='1' cellspacing='0' cellpadding='5px;'>
+            <tr>
+                <td><span>*</span>用户名:</td><td colspan='3'><input type='text' name='user_name' value=''></td>
+            </tr>
+            <tr><td><span>*</span>密码:</td><td colspan='3'><input type='password' name='password'></td></tr>
+            <tr>
+                <td><span>*</span>昵称:</td><td><input type='text' name='nickname' value=''></td><td>QQ号:</td><td><input type='text' name='qq' value=''></td>
+            </tr>
+            <tr>
+                <td>电子邮件:</td><td><input type='text' name='email' value=''></td><td>来自:</td><td><input type='text' name='hometown' value=''></td>
+            </tr>
+            <tr>
+                <td><span>*</span>个性签名:</td><td><textarea style='font-size:17px;' name='signature' rows='6' cols='25'></textarea></td><td>头像:</td><td><input type='radio' name='h_img' checked><input type='radio' name='h_img'></td>
+            </tr>
+            <tr>
+                <td style='font-size:0px;padding:2' colspan='4'>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan='4'><input style='float:none;' type='submit' value='注册'></td>
+            </tr>
+        </table>
+    </form>
+    <h3><a style='text-decoration:none;color:#0366d6;' href='/index'>立即登录</a></h3>
+</div>
+{include file="Index/footer" /}
