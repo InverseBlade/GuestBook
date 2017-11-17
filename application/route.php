@@ -24,5 +24,15 @@ return [
     'editMyArticle/:id$' => 'home/Index/editMyArticle',
     'deleteMyArticle/:id$' => 'home/Index/deleteMyArticle',
     'forum/'  => 'home/Index/forum',
-    'addComment/:mid' => 'home/Index/addComment'
+    'addComment/:mid' => 'home/Index/addComment',
+
+    'admin_user_add/'  => 'admin/Index/admin_user_add',
+    'admin_user_change/[:mode]/[:uid]'  => 'admin/Index/admin_user_change',
+
+    'admin_message_hide/[:mode]/[:mid]' => 'admin/Index/admin_message_hide',
+    'admin_message_delete/[:mid]' => 'admin/Index/admin_message_delete',
+    'admin_message_top/[:mode]/[:mid]' => 'admin/Index/admin_message_top',
+
+    'admin_logout/'   => 'admin/Index/admin_logout',
+
 ];

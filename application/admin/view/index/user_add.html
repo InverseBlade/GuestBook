@@ -1,0 +1,51 @@
+{include file="index/header" title="后台管理"/}
+<div class="nav">
+    <ul>
+        <li>
+            <a class="guide" href="/admin_user_add">添加用户</a>
+        </li>
+        <li>
+            <a class="guide" href="/admin_user_change">更改用户</a>
+        </li>
+        <li>
+            <a class="guide" href="/home">前台首页</a>
+        </li>
+    </ul>
+</div>
+
+<div style="text-align: left;">
+    <form accept-charset="UTF-8" action="/admin_user_add" method='post'>
+        <table style='border-width:0px;border-collapse: collapse;' border='1' cellpadding='5px;' >
+            <tr>
+                <td style="text-align: right;"><span>*</span>用户名:</td><td style="text-align: left;" colspan='3'><input type='text' name='user_name' value=''></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>*</span>密码:</td><td style="text-align: left;" colspan='3'><input type='password' name='password'></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>*</span>昵称:</td><td><input type='text' name='nickname' value=''></td><td>QQ号:</td><td><input type='text' name='qq' value=''></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">电子邮件:</td><td><input type='text' name='email' value=''></td><td style="text-align: right;">来自:</td><td><input type='text' name='hometown' value=''></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>*</span>个性签名:</td><td><textarea style='font-size:17px;' name='signature' rows='6' cols='25'></textarea></td><td style="text-align: right;">头像:</td><td><input type='radio' name='h_img' checked><input type='radio' name='h_img'></td>
+            </tr>
+            <tr>
+                <td style='text-align:right;'>
+                    管理员:
+                </td>
+                <td style="text-align: left;" colspan="3">
+                    否<input type="radio" name="is_admin" value="0" checked>
+                    是<input type="radio" name="is_admin" value="1">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan='4'><input style='float:none;' type='submit' value='添加'></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

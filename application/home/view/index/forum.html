@@ -1,51 +1,104 @@
 {include file="index/header" title="留言广场"/}
 <div style='text-align:center;'>
     <table border='1' style='margin:0 auto;border-collapse: collapse;border: 1px solid #337ab7;' cellspacing="0" class="forum">
-    {volist name="text" id="row"}
-        {volist name="user" id="r"}
-            {eq name="$r.uid"  value="$row.author"}
-                {assign name="author" value="$r" /}
-            {/eq}
-        {/volist}
+        {volist name="text" id="row"}
+            {eq name="$row.is_top" value="1"}
+                {volist name="user" id="r"}
+                    {eq name="$r.uid"  value="$row.author"}
+                        {assign name="author" value="$r" /}
+                    {/eq}
+                {/volist}
 
-        <tr>
-            <td rowspan="4" style="line-height: 25px;width: 187px;height: 178px;">
-                {$author.nickname}<br/>来自: {$author.hometown}
-            </td>
-            <td style="width: 645px;">
-                发表于: {$row.create_time}<span style="margin-left: 100px;">&nbsp;</span>
-                最后更新于: {$row.update_time}
-            </td>
-        </tr>
-        <tr>
-            <td valign="top" style="text-align:left;padding-left: 50px;height: 117px;">{$row.content}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li style="float:left;">Email: {$author.email}</li>
-                    <li style='float:left;'>QQ: {$author.qq}</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: left;">
-                评论: <br/>
-                {volist name="comment" id="c_row"}
-                    {eq name="$c_row.message_id" value="$row.id"}
+                <tr>
+                    <td rowspan="4" valign="center" style="line-height: 25px;width: 187px;height: 178px;">
+                        {$author.nickname}<br/>来自: {$author.hometown}
+                    </td>
+                    <td>
+                        发表于: {$row.create_time}<span style="margin-left: 100px;">&nbsp;</span>
+                        最后更新于: {$row.update_time}
+                        <span style="color:blue;margin-left: 20px;">置顶</span>
+                        <span style="color:red;margin-left: 3px;">精华</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" style="text-align:left;padding-left: 50px;width: 645px;height: 117px;">{$row.content}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li style="float:left;">Email: {$author.email}</li>
+                            <li style='float:left;'>QQ: {$author.qq}</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        评论: <br/>
+                        {volist name="comment" id="c_row"}
+                        {eq name="$c_row.message_id" value="$row.id"}
                         <span style="width: 100px;">{$c_row.p_nickname}: </span>
                         <span style="width: 300px;">{$c_row.content}</span>
                         <span style="width: 200px;color: #cccccc;">回复于{$c_row.interval}</span>
                         <br/>
-                    {/eq}
-                {/volist}
-                <form accept-charset="UTF-8" action="/addComment/{$row.id}" method="post">
-                    <input style='width:400px;' type='text' name='comment'>
-                    <input style='margin-left:10px;' type='submit' value='评论'>
-                </form>
-            </td>
-        </tr>
+                        {/eq}
+                        {/volist}
+                        <form accept-charset="UTF-8" action="/addComment/{$row.id}" method="post">
+                            <input style='width:400px;' type='text' name='comment'>
+                            <input style='margin-left:10px;' type='submit' value='评论'>
+                        </form>
+                    </td>
+                </tr>
+            {/eq}
+        {/volist}
+
+    {volist name="text" id="row"}
+        {eq name="$row.is_top" value="0"}
+            {volist name="user" id="r"}
+                {eq name="$r.uid"  value="$row.author"}
+                    {assign name="author" value="$r" /}
+                {/eq}
+            {/volist}
+
+            <tr>
+                <td rowspan="4" valign="center" style="line-height: 25px;width: 187px;height: 178px;">
+                    {$author.nickname}<br/>来自: {$author.hometown}
+                </td>
+                <td>
+                    发表于: {$row.create_time}<span style="margin-left: 100px;">&nbsp;</span>
+                    最后更新于: {$row.update_time}
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" style="text-align:left;padding-left: 50px;width: 645px;height: 117px;">{$row.content}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li style="float:left;">Email: {$author.email}</li>
+                        <li style='float:left;'>QQ: {$author.qq}</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    评论: <br/>
+                    {volist name="comment" id="c_row"}
+                        {eq name="$c_row.message_id" value="$row.id"}
+                            <span style="width: 100px;">{$c_row.p_nickname}: </span>
+                            <span style="width: 300px;">{$c_row.content}</span>
+                            <span style="width: 200px;color: #cccccc;">回复于{$c_row.interval}</span>
+                            <br/>
+                        {/eq}
+                    {/volist}
+                    <form accept-charset="UTF-8" action="/addComment/{$row.id}" method="post">
+                        <input style='width:400px;' type='text' name='comment'>
+                        <input style='margin-left:10px;' type='submit' value='评论'>
+                    </form>
+                </td>
+            </tr>
+        {/eq}
     {/volist}
     </table>
 </div>

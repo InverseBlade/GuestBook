@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[title]</title>
+    <link rel='stylesheet' type='text/css' href='/static/WebStyle.css'>
+    <style>
+        form span {
+            color:red;
+        }
+        td {
+            padding:5px;
+            padding-left:15px;
+            padding-right:15px;
+            text-align:left;
+        }
+        td li {
+            float:left;
+            font-size:13px;
+            width:190px;
+        }
+        td ul {
+            margin:0;
+            padding:0;
+            list-style-type:none;
+            display:inline-block;
+        }
+    </style>
+</head>
+
+<body style='margin:0 auto;text-align: center;background-color: #f8f8f8;'>
+<div class='header'>
+    <h2 style="margin-top: 10px;">留言簿后台管理系统</h2>
+</div>
+
+<div class='guide' style="text-align:left;height:66px;background: #bebebe;">
+    <ul>
+        <li>
+            <div style="text-align:center;width: 200px;height:56px;background: #34495E;color: white;font-size:35px;padding-top: 10px;">Admin</div>
+        </li>
+        <li>
+            <a class="guide_row" href="/admin_user_change">管理用户</a>
+        </li>
+        <li>
+            <a class="guide_row" href="/admin_message_delete">管理留言</a>
+        </li>
+        <li>
+            <a class="guide_row" href="/admin_logout">退出</a>
+        </li>
+    </ul>
+</div>

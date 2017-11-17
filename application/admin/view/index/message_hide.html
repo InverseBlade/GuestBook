@@ -1,0 +1,93 @@
+{include file="index/header" title="后台管理"/}
+<div class="nav">
+    <ul>
+        <li>
+            <a class="guide" href="/admin_message_top">置顶留言</a>
+        </li>
+        <li>
+            <a class="guide" href="/admin_message_delete">删除留言</a>
+        </li>
+        <li>
+            <a class="guide" href="/admin_message_hide">屏蔽留言</a>
+        </li>
+        <li>
+            <a class="guide" href="/home">前台首页</a>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <table style="font-size:18px;border-collapse: collapse;border: 1px solid #337ab7;word-break:break-all; word-wrap:break-all;" border="1">
+        <tr style="text-align: center">
+            <th style="width: 7%;">aid</th>
+            <th style="width: 20%;">留言内容</th>
+            <th style="width: 15%;">作者用户名</th>
+            <th style="width: 12%;">作者昵称</th>
+            <th style="width: 5%;">显示</th>
+            <th style="width: 5%;">置顶</th>
+            <th style="width: 15%;">创建时间</th>
+            <th style="width: 15%;">操作</th>
+        </tr>
+
+        {volist name="text" id="row"}
+        {volist name="user" id="r"}
+        {eq name="$r.uid"  value="$row.author"}
+        {assign name="author" value="$r" /}
+        {/eq}
+        {/volist}
+
+        <tr>
+            <td>
+                {$row.id}
+            </td>
+            <td>
+                {$row.content}
+            </td>
+            <td>
+                {$author.user_name}
+            </td>
+            <td>
+                {$author.nickname}
+            </td>
+            <td style="text-align: center;">
+                {eq name="$row.is_show" value="1"}
+                ✔
+                {else}
+                ✘
+                {/eq}
+            </td>
+            <td style="text-align: center;">
+                {eq name="$row.is_top" value="1"}
+                ✔
+                {else}
+                ✘
+                {/eq}
+            </td>
+            <td>
+                {$row.create_time}
+            </td>
+            <td style="text-align: center;">
+                <a style="color:#337ab7;text-decoration: none" href="/admin_message_hide/1/{$row.id}">屏蔽</a> <span style="color: black">|</span>
+                <a style="color:#337ab7;text-decoration: none" href="/admin_message_hide/2/{$row.id}">取消屏蔽</a>
+            </td>
+        </tr>
+        {/volist}
+    </table>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,10 +16,16 @@ class LoginController extends Controller{
         Session::set('text',null);
         if($request->isPost()){
             if(User::login($request->param('UserName'),$request->param('Password'))){
-                $uid=User::getByUserName($request->param('UserName'))->uid;
-                session('uid',null);
+                $user=User::getByUserName($request->param('UserName'));
+                $uid=$user->uid;
+                session('is_admin',null);
                 session('uid',$uid);
-                $this->success('登录成功!','/home/',"",1);
+                if($user->is_admin==1){
+                    session('is_admin',$uid);
+                    $this->redirect("/admin_user_change");
+                }else{
+                    $this->success('登录成功!','/home/',"",1);
+                }
                 unset($request);
             }else{
                 $this->error('用户名或密码错误!','/',"",2);

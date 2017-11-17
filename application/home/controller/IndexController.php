@@ -78,7 +78,7 @@ class IndexController extends Controller {
     public function forum() {
         $comment = Comment::getAllData();
         $user = User::all();
-        $message = Message::all(function($query){$query->order('create_time');});
+        $message = Message::all(function($query){$query->where('is_show','<>',0)->order('create_time','desc');});
 
         $this->assign("text",$message);
         $this->assign("user",$user);

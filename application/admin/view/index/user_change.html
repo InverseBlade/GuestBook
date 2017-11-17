@@ -1,0 +1,59 @@
+{include file="index/header" title="后台管理"/}
+<div class="nav">
+    <ul>
+        <li>
+            <a class="guide" href="/admin_user_add">添加用户</a>
+        </li>
+        <li>
+            <a class="guide" href="/admin_user_change">更改用户</a>
+        </li>
+        <li>
+            <a class="guide" href="/home">前台首页</a>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <table style="font-size:15px;border-collapse: collapse;border: 1px solid #337ab7;word-break:break-all; word-wrap:break-all;" border="1">
+        <tr style="text-align: center">
+            <th style="width: 5%;">id</th>
+            <th style="width: 6%;">网站id</th>
+            <th style="width: 9%;">用户名</th>
+            <th style="width: 10%;">用户昵称</th>
+            <th style="width: 13%;">创建时间</th>
+            <th style="width: 13%;">电子邮件</th>
+            <th style="width: 10%;">QQ号</th>
+            <th style="width: 10%;">来自</th>
+            <th style="width: 10%;">签名</th>
+            <th style="width: 5%;">管理员</th>
+            <th style="width: 12%;">操作</th>
+        </tr>
+        {volist name="all_user" id="user"}
+        <tr style="text-align: center;" class="my_text">
+            <td>{$user.id}</td>
+            <td>{$user.uid}</td>
+            <td>{$user.user_name}</td>
+            <td>{$user.nickname}</td>
+            <td>{$user.create_time}</td>
+            <td>{$user.email}</td>
+            <td>{$user.qq}</td>
+            <td>{$user.hometown}</td>
+            <td>{$user.signature}</td>
+            <td style="text-align: center;">
+                {eq name="$user.is_admin" value="1"}
+                    ✔
+                {else}
+                    ✘
+                {/eq}
+            </td>
+            <td style="text-align: center;">
+                <a style="color:#337ab7;text-decoration: none" href="/admin_user_change/1/{$user.uid}">标为站长</a> <span style="color: black">|</span>
+                <a style="color:#337ab7;text-decoration: none" href="/admin_user_change/2/{$user.uid}">删除</a>
+            </td>
+        </tr>
+        {/volist}
+    </table>
+</div>
+
+</body>
+</html>
