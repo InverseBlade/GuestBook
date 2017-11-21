@@ -1,0 +1,57 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"E:\���������test\MyBlog\public/../application/index\view\index\index.html";i:1510476235;s:75:"E:\���������test\MyBlog\public/../application/index\view\IndexController\header.html";i:1510475900;s:75:"E:\���������test\MyBlog\public/../application/index\view\IndexController\footer.html";i:1510476086;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login in</title>
+    <link rel='stylesheet' type='text/css' href='static/webstyle1.css'>
+    <style>
+        form span {
+            color:red;
+        }
+        label {
+            font-size:15px;
+        }
+        input {
+            margin-top:8px;
+            font-size:19px;
+        }
+    </style>
+</head>
+
+<body style='margin:0 auto;'>
+<div class='header'>
+    <h1>Welcome to GuestBook</h1>
+</div>
+
+<div style='text-align:center;height:762px;padding:10px;font-size:17px;'>
+    <h2>Sign in to GuestBook</h2><br/>
+    <form accept-charset="UTF-8" action="/" method='post'>
+        <fieldset style='width:250px;border-width:2px;padding:20px;margin:0px auto;text-align: center;'>
+            <div style='width:252px;text-align:left;margin:0px auto;'>
+                <label for='UserName'>Username:</label>
+                <input type='text' name='UserName' style='margin-bottom:15px;' value=""><span style='font-size:15px;'>*</span>
+                <label for='Password'>
+                    Password:
+                    <a style='color:blue;font-size:10px;margin-left:67px;text-decoration:none;' href='./changePassword.php'>Change password</a>
+                </label>
+                <input type='password' name='Password'><span style='font-size:15px;'>*</span>
+            </div>
+            <br/>
+            <div style='text-align:center;'>
+                <input type='submit' value='Sign in'>
+            </div>
+        </fieldset>
+        <h3><a style='text-decoration:none;color:#0366d6;' href='/register'>Click me to sign up</a></h3>
+    </form>
+    <div style="margin:0 auto;width:250px;text-align: left">
+        <h4><?php echo url('IndexController/index/index'); ?></h4>
+        注册信息:<br/>
+        <p>用户名: </p>
+        <p>  密码: </p>
+    </div>
+</div>
+<div class='footer'>
+    <h3>Powered By Zewei Zhang</h3>
+</div>
+</body>
+</html>

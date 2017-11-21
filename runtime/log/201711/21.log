@@ -1,0 +1,2751 @@
+---------------------------------------------------------------
+[ 2017-11-21T12:33:05+08:00 ] 0.0.0.0 ::1 GET /
+[ info ] localhost/ [运行时间：0.080995s][吞吐率：12.35req/s] [内存消耗：1,886.45kb] [文件加载：45]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\test\blog\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\test\blog\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:33:12+08:00 ] 0.0.0.0 ::1 GET /index/Register/register
+[ info ] localhost/index/Register/register [运行时间：0.054292s][吞吐率：18.42req/s] [内存消耗：2,927.55kb] [文件加载：53]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\RegisterController->register[ E:\test\blog\application\index\controller\RegisterController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/index\view\index\Register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:33:15+08:00 ] 0.0.0.0 ::1 GET /index
+[ info ] localhost/index [运行时间：0.033509s][吞吐率：29.84req/s] [内存消耗：1,886.53kb] [文件加载：45]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index/Register/register',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\test\blog\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\test\blog\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:33:16+08:00 ] 0.0.0.0 ::1 GET /index/Modify/modify
+[ info ] localhost/index/Modify/modify [运行时间：0.034515s][吞吐率：28.97req/s] [内存消耗：1,889.41kb] [文件加载：45]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Modify',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\ModifyController->Modify[ E:\test\blog\application\index\controller\ModifyController.php ]
+[ info ] [ VIEW ] E:\test\blog\public/../application/index\view\index\modify.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:33:19+08:00 ] 0.0.0.0 ::1 GET /index
+[ info ] localhost/index [运行时间：0.033587s][吞吐率：29.77req/s] [内存消耗：1,886.52kb] [文件加载：45]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index/Modify/modify',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\test\blog\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\test\blog\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:33:23+08:00 ] 0.0.0.0 ::1 POST /index/Login/login
+[ info ] localhost/index/Login/login [运行时间：0.095278s][吞吐率：10.50req/s] [内存消耗：3,042.42kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'UserName' => 'zhangzewei',
+  'Password' => 'acs977282',
+)
+[ info ] [ RUN ] app\index\controller\LoginController->login[ E:\test\blog\application\index\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012746s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.022159s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `user_name` = 'zhangzewei' LIMIT 1 [ RunTime:0.008767s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `user_name` = 'zhangzewei' LIMIT 1 [ RunTime:0.000857s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:24+08:00 ] 0.0.0.0 ::1 GET /home/
+[ info ] localhost/home/ [运行时间：0.053523s][吞吐率：18.68req/s] [内存消耗：3,057.27kb] [文件加载：54]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index/Login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->index[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'text',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002014s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001867s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.000980s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:25+08:00 ] 0.0.0.0 ::1 GET /showMyArticle
+[ info ] localhost/showMyArticle [运行时间：0.059697s][吞吐率：16.75req/s] [内存消耗：3,090.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'showMyArticle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/home/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->showMyArticle[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\showMyArticle.html [ array (
+  0 => 'nickname',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001587s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.004383s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `author` = 10027 ORDER BY `id` [ RunTime:0.002403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001531s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.000767s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:27+08:00 ] 0.0.0.0 ::1 GET /forum
+[ info ] localhost/forum [运行时间：0.063356s][吞吐率：15.78req/s] [内存消耗：3,206.27kb] [文件加载：56]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'forum',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/showMyArticle',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->forum[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\forum.html [ array (
+  0 => 'text',
+  1 => 'user',
+  2 => 'comment',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001678s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.003210s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `is_show` = 1 ORDER BY `create_time` [ RunTime:0.001574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001531s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `is_show` <> 0 ORDER BY `create_time`  desc [ RunTime:0.000970s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:28+08:00 ] 0.0.0.0 ::1 GET /showMyArticle
+[ info ] localhost/showMyArticle [运行时间：0.052547s][吞吐率：19.03req/s] [内存消耗：3,090.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'showMyArticle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/forum',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->showMyArticle[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\showMyArticle.html [ array (
+  0 => 'nickname',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001645s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001696s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `author` = 10027 ORDER BY `id` [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001469s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.000833s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:29+08:00 ] 0.0.0.0 ::1 GET /home
+[ info ] localhost/home [运行时间：0.048737s][吞吐率：20.52req/s] [内存消耗：3,057.23kb] [文件加载：54]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/showMyArticle',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->index[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'text',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001626s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001720s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.000959s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:30+08:00 ] 0.0.0.0 ::1 GET /showMyArticle
+[ info ] localhost/showMyArticle [运行时间：0.053558s][吞吐率：18.67req/s] [内存消耗：3,090.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'showMyArticle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->showMyArticle[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\showMyArticle.html [ array (
+  0 => 'nickname',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001716s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001784s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `author` = 10027 ORDER BY `id` [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001483s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.000774s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:31+08:00 ] 0.0.0.0 ::1 GET /forum
+[ info ] localhost/forum [运行时间：0.061501s][吞吐率：16.26req/s] [内存消耗：3,206.27kb] [文件加载：56]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'forum',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/showMyArticle',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->forum[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\forum.html [ array (
+  0 => 'text',
+  1 => 'user',
+  2 => 'comment',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001383s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.001388s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `is_show` = 1 ORDER BY `create_time` [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.001256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001544s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `is_show` <> 0 ORDER BY `create_time`  desc [ RunTime:0.000973s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:43+08:00 ] 0.0.0.0 ::1 GET /logout
+[ info ] localhost/logout [运行时间：0.033627s][吞吐率：29.74req/s] [内存消耗：1,909.25kb] [文件加载：46]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'logout',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/forum',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->logout[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\test\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:33:44+08:00 ] 0.0.0.0 ::1 GET /index
+[ info ] localhost/index [运行时间：0.032681s][吞吐率：30.60req/s] [内存消耗：1,886.50kb] [文件加载：45]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/logout',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\test\blog\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\test\blog\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:33:55+08:00 ] 0.0.0.0 ::1 POST /index/Login/login
+[ info ] localhost/index/Login/login [运行时间：0.053066s][吞吐率：18.84req/s] [内存消耗：3,051.48kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'UserName' => 'admin',
+  'Password' => 'admin123',
+)
+[ info ] [ RUN ] app\index\controller\LoginController->login[ E:\test\blog\application\index\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001730s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001693s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `user_name` = 'admin' LIMIT 1 [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `user_name` = 'admin' LIMIT 1 [ RunTime:0.000810s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:55+08:00 ] 0.0.0.0 ::1 GET /admin_user_change
+[ info ] localhost/admin_user_change [运行时间：0.048386s][吞吐率：20.67req/s] [内存消耗：3,074.95kb] [文件加载：54]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_user_change',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mode' => NULL,
+  'uid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_user_change[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\user_change.html [ array (
+  0 => 'all_user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001635s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001637s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000916s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:33:56+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete
+[ info ] localhost/admin_message_delete [运行时间：0.055691s][吞吐率：17.96req/s] [内存消耗：3,124.31kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_user_change',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\message_delete.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001671s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001707s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001454s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000837s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:03+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete/27
+[ info ] localhost/admin_message_delete/27 [运行时间：0.059769s][吞吐率：16.73req/s] [内存消耗：3,096.29kb] [文件加载：58]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '27',
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\test\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002121s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001552s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.000919s ]
+[ sql ] [ SQL ] DELETE FROM `blog_message`    WHERE  `id` = 27 [ RunTime:0.004859s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:04+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete
+[ info ] localhost/admin_message_delete [运行时间：0.053434s][吞吐率：18.71req/s] [内存消耗：3,121.13kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete/27',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\message_delete.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001592s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001570s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001678s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000892s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:08+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete/29
+[ info ] localhost/admin_message_delete/29 [运行时间：0.053632s][吞吐率：18.65req/s] [内存消耗：3,096.21kb] [文件加载：58]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '29',
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\test\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001656s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001539s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.000901s ]
+[ sql ] [ SQL ] DELETE FROM `blog_message`    WHERE  `id` = 29 [ RunTime:0.000888s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:09+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete
+[ info ] localhost/admin_message_delete [运行时间：0.052689s][吞吐率：18.98req/s] [内存消耗：3,118.09kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete/29',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\message_delete.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002142s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001579s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000826s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:11+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete/31
+[ info ] localhost/admin_message_delete/31 [运行时间：0.055495s][吞吐率：18.02req/s] [内存消耗：3,096.63kb] [文件加载：58]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '31',
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\test\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001911s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.002565s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.001023s ]
+[ sql ] [ SQL ] DELETE FROM `blog_message`    WHERE  `id` = 31 [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:12+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete
+[ info ] localhost/admin_message_delete [运行时间：0.053185s][吞吐率：18.80req/s] [内存消耗：3,114.53kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete/31',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\message_delete.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001557s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001447s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000852s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:18+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete/34
+[ info ] localhost/admin_message_delete/34 [运行时间：0.056637s][吞吐率：17.66req/s] [内存消耗：3,096.32kb] [文件加载：58]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '34',
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\test\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001708s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.002380s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] DELETE FROM `blog_message`    WHERE  `id` = 34 [ RunTime:0.000733s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:20+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete
+[ info ] localhost/admin_message_delete [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：3,111.45kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete/34',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\message_delete.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001743s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001180s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000954s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:25+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete/33
+[ info ] localhost/admin_message_delete/33 [运行时间：0.055562s][吞吐率：18.00req/s] [内存消耗：3,096.21kb] [文件加载：58]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '33',
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\test\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001702s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001390s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.000929s ]
+[ sql ] [ SQL ] DELETE FROM `blog_message`    WHERE  `id` = 33 [ RunTime:0.000732s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:26+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete
+[ info ] localhost/admin_message_delete [运行时间：0.053877s][吞吐率：18.56req/s] [内存消耗：3,108.33kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete/33',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\message_delete.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001582s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001223s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000842s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:32+08:00 ] 0.0.0.0 ::1 GET /admin_user_change
+[ info ] localhost/admin_user_change [运行时间：0.049257s][吞吐率：20.30req/s] [内存消耗：3,074.52kb] [文件加载：54]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_user_change',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mode' => NULL,
+  'uid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_user_change[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\user_change.html [ array (
+  0 => 'all_user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001663s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001387s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000886s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:36+08:00 ] 0.0.0.0 ::1 GET /admin_user_change
+[ info ] localhost/admin_user_change [运行时间：0.049636s][吞吐率：20.15req/s] [内存消耗：3,074.52kb] [文件加载：54]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_user_change',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_user_change',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mode' => NULL,
+  'uid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_user_change[ E:\test\blog\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/admin\view\index\user_change.html [ array (
+  0 => 'all_user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001713s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001363s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000871s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:37+08:00 ] 0.0.0.0 ::1 GET /home
+[ info ] localhost/home [运行时间：0.049522s][吞吐率：20.19req/s] [内存消耗：3,057.23kb] [文件加载：54]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_user_change',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->index[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'text',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001764s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10024 LIMIT 1 [ RunTime:0.000924s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:38+08:00 ] 0.0.0.0 ::1 GET /showMyArticle
+[ info ] localhost/showMyArticle [运行时间：0.053634s][吞吐率：18.64req/s] [内存消耗：3,081.04kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'showMyArticle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->showMyArticle[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\showMyArticle.html [ array (
+  0 => 'nickname',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001620s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.003143s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `author` = 10024 ORDER BY `id` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001245s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10024 LIMIT 1 [ RunTime:0.000915s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:38+08:00 ] 0.0.0.0 ::1 GET /forum
+[ info ] localhost/forum [运行时间：0.057562s][吞吐率：17.37req/s] [内存消耗：3,193.63kb] [文件加载：56]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'forum',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/showMyArticle',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->forum[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\forum.html [ array (
+  0 => 'text',
+  1 => 'user',
+  2 => 'comment',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001613s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.001522s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `is_show` = 1 ORDER BY `create_time` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001490s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `is_show` <> 0 ORDER BY `create_time`  desc [ RunTime:0.000869s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:50+08:00 ] 0.0.0.0 ::1 GET /forum
+[ info ] localhost/forum [运行时间：0.056780s][吞吐率：17.61req/s] [内存消耗：3,193.63kb] [文件加载：56]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'forum',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/forum',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->forum[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\forum.html [ array (
+  0 => 'text',
+  1 => 'user',
+  2 => 'comment',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001949s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.002556s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `is_show` = 1 ORDER BY `create_time` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001200s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001301s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `is_show` <> 0 ORDER BY `create_time`  desc [ RunTime:0.000786s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:51+08:00 ] 0.0.0.0 ::1 GET /showMyArticle
+[ info ] localhost/showMyArticle [运行时间：0.052589s][吞吐率：19.02req/s] [内存消耗：3,081.04kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'showMyArticle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/forum',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->showMyArticle[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\showMyArticle.html [ array (
+  0 => 'nickname',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001794s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001347s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `author` = 10024 ORDER BY `id` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001593s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10024 LIMIT 1 [ RunTime:0.001009s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:52+08:00 ] 0.0.0.0 ::1 GET /home
+[ info ] localhost/home [运行时间：0.048838s][吞吐率：20.48req/s] [内存消耗：3,057.23kb] [文件加载：54]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/showMyArticle',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->index[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'text',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001603s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001370s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10024 LIMIT 1 [ RunTime:0.000916s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:52+08:00 ] 0.0.0.0 ::1 GET /showMyArticle
+[ info ] localhost/showMyArticle [运行时间：0.053520s][吞吐率：18.68req/s] [内存消耗：3,081.04kb] [文件加载：55]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'showMyArticle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->showMyArticle[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\showMyArticle.html [ array (
+  0 => 'nickname',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001818s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001452s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `author` = 10024 ORDER BY `id` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001616s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10024 LIMIT 1 [ RunTime:0.001034s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:53+08:00 ] 0.0.0.0 ::1 GET /forum
+[ info ] localhost/forum [运行时间：0.058006s][吞吐率：17.24req/s] [内存消耗：3,193.63kb] [文件加载：56]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'forum',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/showMyArticle',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->forum[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\test\blog\public/../application/home\view\index\forum.html [ array (
+  0 => 'text',
+  1 => 'user',
+  2 => 'comment',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002126s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.001613s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `is_show` = 1 ORDER BY `create_time` [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001207s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001232s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `is_show` <> 0 ORDER BY `create_time`  desc [ RunTime:0.000821s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:34:53+08:00 ] 0.0.0.0 ::1 GET /logout
+[ info ] localhost/logout [运行时间：0.034684s][吞吐率：28.83req/s] [内存消耗：1,909.27kb] [文件加载：46]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'logout',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/forum',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->logout[ E:\test\blog\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\test\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:34:54+08:00 ] 0.0.0.0 ::1 GET /index
+[ info ] localhost/index [运行时间：0.034468s][吞吐率：29.01req/s] [内存消耗：1,886.50kb] [文件加载：45]
+[ info ] [ LANG ] E:\test\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/logout',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\test\blog\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\test\blog\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:40:43+08:00 ] 0.0.0.0 ::1 GET /
+[ info ] localhost/ [运行时间：0.049010s][吞吐率：20.40req/s] [内存消耗：2,044.41kb] [文件加载：47]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\GuestBook\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:40:49+08:00 ] 0.0.0.0 ::1 POST /index/Login/login
+[ info ] localhost/index/Login/login [运行时间：1.054939s][吞吐率：0.95req/s] [内存消耗：2,963.91kb] [文件加载：54]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'UserName' => 'admin',
+  'Password' => 'admin123',
+)
+[ info ] [ RUN ] app\index\controller\LoginController->login[ E:\GuestBook\application\index\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[E:\GuestBook\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:06+08:00 ] 0.0.0.0 ::1 GET /
+[ info ] localhost/ [运行时间：0.034470s][吞吐率：29.01req/s] [内存消耗：1,887.25kb] [文件加载：45]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\GuestBook\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:41:09+08:00 ] 0.0.0.0 ::1 POST /index/Login/login
+[ info ] localhost/index/Login/login [运行时间：0.066492s][吞吐率：15.04req/s] [内存消耗：3,051.57kb] [文件加载：55]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'UserName' => 'admin',
+  'Password' => 'admin123',
+)
+[ info ] [ RUN ] app\index\controller\LoginController->login[ E:\GuestBook\application\index\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011632s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.007252s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `user_name` = 'admin' LIMIT 1 [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `user_name` = 'admin' LIMIT 1 [ RunTime:0.000844s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:09+08:00 ] 0.0.0.0 ::1 GET /admin_user_change
+[ info ] localhost/admin_user_change [运行时间：0.050803s][吞吐率：19.68req/s] [内存消耗：3,241.52kb] [文件加载：56]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_user_change',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mode' => NULL,
+  'uid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_user_change[ E:\GuestBook\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/admin\view\index\user_change.html [ array (
+  0 => 'all_user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002062s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001638s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000877s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:10+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete
+[ info ] localhost/admin_message_delete [运行时间：0.062442s][吞吐率：16.01req/s] [内存消耗：3,275.41kb] [文件加载：57]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_user_change',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\GuestBook\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/admin\view\index\message_delete.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001749s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001723s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001876s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000923s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:11+08:00 ] 0.0.0.0 ::1 GET /admin_user_change
+[ info ] localhost/admin_user_change [运行时间：0.048289s][吞吐率：20.71req/s] [内存消耗：3,074.52kb] [文件加载：54]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_user_change',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mode' => NULL,
+  'uid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_user_change[ E:\GuestBook\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/admin\view\index\user_change.html [ array (
+  0 => 'all_user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001704s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001635s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000910s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:13+08:00 ] 0.0.0.0 ::1 GET /admin_message_delete
+[ info ] localhost/admin_message_delete [运行时间：0.052974s][吞吐率：18.88req/s] [内存消耗：3,108.31kb] [文件加载：55]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_delete',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_user_change',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_delete[ E:\GuestBook\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/admin\view\index\message_delete.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001716s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001694s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001477s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000817s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:14+08:00 ] 0.0.0.0 ::1 GET /admin_message_top
+[ info ] localhost/admin_message_top [运行时间：0.058402s][吞吐率：17.12req/s] [内存消耗：3,275.48kb] [文件加载：57]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_message_top',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_delete',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'mode' => NULL,
+  'mid' => NULL,
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_message_top[ E:\GuestBook\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/admin\view\index\message_top.html [ array (
+  0 => 'text',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001612s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001622s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001465s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` ORDER BY `create_time` [ RunTime:0.000786s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:16+08:00 ] 0.0.0.0 ::1 GET /admin_logout
+[ info ] localhost/admin_logout [运行时间：0.037613s][吞吐率：26.59req/s] [内存消耗：2,074.18kb] [文件加载：48]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin_logout',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_message_top',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\IndexController->admin_logout[ E:\GuestBook\application\admin\Controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:41:17+08:00 ] 0.0.0.0 ::1 GET /index
+[ info ] localhost/index [运行时间：0.034831s][吞吐率：28.71req/s] [内存消耗：1,887.30kb] [文件加载：45]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/admin_logout',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\GuestBook\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:41:20+08:00 ] 0.0.0.0 ::1 POST /index/Login/login
+[ info ] localhost/index/Login/login [运行时间：0.054365s][吞吐率：18.39req/s] [内存消耗：3,042.51kb] [文件加载：55]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'UserName' => 'zhangzewei',
+  'Password' => 'acs977282',
+)
+[ info ] [ RUN ] app\index\controller\LoginController->login[ E:\GuestBook\application\index\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001608s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001758s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `user_name` = 'zhangzewei' LIMIT 1 [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `user_name` = 'zhangzewei' LIMIT 1 [ RunTime:0.000891s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:22+08:00 ] 0.0.0.0 ::1 GET /home/
+[ info ] localhost/home/ [运行时间：0.057834s][吞吐率：17.29req/s] [内存消耗：3,215.03kb] [文件加载：56]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index/Login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->index[ E:\GuestBook\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'text',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001644s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001755s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.001002s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:22+08:00 ] 0.0.0.0 ::1 GET /showMyArticle
+[ info ] localhost/showMyArticle [运行时间：0.058671s][吞吐率：17.04req/s] [内存消耗：3,251.55kb] [文件加载：57]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'showMyArticle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/home/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->showMyArticle[ E:\GuestBook\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/home\view\index\showMyArticle.html [ array (
+  0 => 'nickname',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001745s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001642s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `author` = 10027 ORDER BY `id` [ RunTime:0.001040s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001501s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.000836s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:23+08:00 ] 0.0.0.0 ::1 GET /home
+[ info ] localhost/home [运行时间：0.050753s][吞吐率：19.70req/s] [内存消耗：3,057.23kb] [文件加载：54]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/showMyArticle',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->index[ E:\GuestBook\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'text',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002036s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001552s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.000944s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:25+08:00 ] 0.0.0.0 ::1 GET /forum
+[ info ] localhost/forum [运行时间：0.064088s][吞吐率：15.60req/s] [内存消耗：3,366.34kb] [文件加载：58]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'forum',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->forum[ E:\GuestBook\application\home\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/home\view\index\forum.html [ array (
+  0 => 'text',
+  1 => 'user',
+  2 => 'comment',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001631s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.001885s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `is_show` = 1 ORDER BY `create_time` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001767s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001615s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `is_show` <> 0 ORDER BY `create_time`  desc [ RunTime:0.000921s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:26+08:00 ] 0.0.0.0 ::1 GET /showMyArticle
+[ info ] localhost/showMyArticle [运行时间：0.053528s][吞吐率：18.68req/s] [内存消耗：3,090.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'showMyArticle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/forum',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->showMyArticle[ E:\GuestBook\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/home\view\index\showMyArticle.html [ array (
+  0 => 'nickname',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002129s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_message` [ RunTime:0.001718s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_message` WHERE  `author` = 10027 ORDER BY `id` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.001497s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `uid` = 10027 LIMIT 1 [ RunTime:0.000776s ]
+---------------------------------------------------------------
+[ 2017-11-21T12:41:28+08:00 ] 0.0.0.0 ::1 GET /logout
+[ info ] localhost/logout [运行时间：0.032813s][吞吐率：30.48req/s] [内存消耗：1,909.26kb] [文件加载：46]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Index',
+    2 => 'logout',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/showMyArticle',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\Controller\IndexController->logout[ E:\GuestBook\application\home\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:41:29+08:00 ] 0.0.0.0 ::1 GET /index
+[ info ] localhost/index [运行时间：0.035142s][吞吐率：28.46req/s] [内存消耗：1,886.50kb] [文件加载：45]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/logout',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\GuestBook\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
