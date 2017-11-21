@@ -68,6 +68,7 @@ class IndexController extends Controller {
     //删除留言
     public function deleteMyArticle($id) {
         if($text=Message::get($id)->delete()){
+            \think\Db::execute("delete from blog_comment WHERE message_id = ? ",[$id]);
             $this->success("删除成功!","/showMyArticle","",1);
         }else{
             $this->error("删除失败:".$text->getError(),"/showMyArticle","",2);
