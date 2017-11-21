@@ -2,10 +2,12 @@
 			margin:0 auto;
 		}
 		div.header {
-			background-color:black;
+			background-color:#333;
 			color:white;
 			text-align:center;
-			padding:5px;
+			padding:1px;
+			margin: 0px;
+			height: 50px;
 		}
 		.nav {
 			float:left;
@@ -30,11 +32,12 @@
 			padding:0;
   		}
 		.footer {
-			background-color:black;
+			background-color:#333;
 			color:white;
 			clear:both;
 			text-align:center;
 			padding:5px;
+			height:50px;
 		}
 		.guide {
 			list-style-type:none;

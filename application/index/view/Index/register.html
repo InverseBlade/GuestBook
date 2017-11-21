@@ -7,7 +7,12 @@
                 <td style="text-align: right;"><span>*</span>用户名:</td><td style="text-align: left;" colspan='3'><input type='text' name='user_name' value=''></td>
             </tr>
             <tr>
-                <td style="text-align: right;"><span>*</span>密码:</td><td style="text-align: left;" colspan='3'><input type='password' name='password'></td>
+                <td style="text-align: right;">
+                    <span>*</span>密码:
+                </td>
+                <td style="text-align: left;" colspan='3'>
+                    <input type='password' name='password'><span>(密码长度不能小于8)</span>
+                </td>
             </tr>
             <tr>
                 <td style="text-align: right;"><span>*</span>昵称:</td><td style="text-align: left;"><input type='text' name='nickname' value=''></td><td>QQ号:</td><td><input type='text' name='qq' value=''></td>
@@ -16,7 +21,14 @@
                 <td style="text-align: right;">电子邮件:</td><td style="text-align: left;"><input type='text' name='email' value=''></td><td style="text-align: right;">来自:</td><td><input type='text' name='hometown' value=''></td>
             </tr>
             <tr>
-                <td style="text-align: right;"><span>*</span>个性签名:</td><td><textarea style='font-size:17px;' name='signature' rows='6' cols='25'></textarea></td><td style="text-align: right;">头像:</td><td><input type='radio' name='h_img' checked><input type='radio' name='h_img'></td>
+                <td style="text-align: right;"><span>*</span>个性签名:</td><td><textarea style='font-size:17px;' name='signature' rows='6' cols='25'></textarea></td>
+                <td style="text-align: right;">头像:</td>
+                <td>
+                    <input type='radio' id="male" name='img_id' value="1">
+                    <label for="male"><img src="/static/1.jpg"/></label>
+                    <input type='radio' id="female" name='img_id' value="2">
+                    <label for="female"><img src="/static/2.jpg"/> </label>
+                </td>
             </tr>
             <tr>
                 <td style='font-size:0px;padding:2px;' colspan='4'>&nbsp;</td>

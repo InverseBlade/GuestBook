@@ -2,18 +2,26 @@
 			margin:0 auto;
 		}
 		div.header {
-			background-color:black;
+			background-color:#333;
 			color:white;
 			text-align:center;
 			padding:5px;
+			height:50px;
 		}
 		.nav {
 			float:left;
-			height:775px;
-			width:180px;
+			height:790px;
+			width:200px;
 			text-align:right;
 			padding:0;
 			background-color:#bebebe;
+		}
+		.nav ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			overflow:hidden;
+			display:inline-block;
 		}
 		.section {
 			width:500px;
@@ -30,11 +38,12 @@
 			padding:0;
   		}
 		.footer {
-			background-color:black;
+			background-color:#333;
 			color:white;
 			clear:both;
 			text-align:center;
 			padding:5px;
+			height:50px;
 		}
 		.guide {
 			font-size:20px;
@@ -64,6 +73,21 @@
 			text-transform:uppercase;
 		}
 		a.guide:hover,a.guide:active {
+			background-color: #337ab7;
+		}
+		a.guide_row:link,a.guide_row:visited {
+			display:block;
+			font-weight:bold;
+			color:white;
+			width:180px;
+			background-color:#bebebe;
+			text-align:center;
+			padding:10px;
+			padding-top:20px;
+			padding-bottom:20px;
+			text-decoration:none;
+		}
+		a.guide_row:hover, a.guide_row:active {
 			background-color: #337ab7;
 		}
 		.forum td {
