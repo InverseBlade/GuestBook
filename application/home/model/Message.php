@@ -20,6 +20,24 @@ class Message extends Model {
     protected $type=['create_time'=>'timestamp','update_time'=>'timestamp'];
     protected $dateFormat='Y-m-d H:i:s';
 
+    //删除留言以及它的评论
+    public static function deleteData($mid) {
+        if(is_array($mid)){
+            foreach ($mid as $item){
+                \think\Db::execute("delete from blog_comment WHERE message_id = ? ",[$item]);
+                if(!Message::get($item)->delete()){
+                    return false;
+                }
+            }
+        }else{
+            if(Message::get($mid)->delete()){
+                \think\Db::execute("delete from blog_comment WHERE message_id = ? ",[$mid]);
+                return true;
+            }else{
+                return false;
+            }
+        }
+    }
     //添加留言
     public static function addData($uid) {
         $data = input("post.");

@@ -6,6 +6,7 @@
  * Time: 16:45
  */
 namespace app\index\model;
+use app\home\model\Message;
 use think\Model;
 
 Class User extends Model {
@@ -17,7 +18,7 @@ Class User extends Model {
 
     protected $type=['create_time'=>'timestamp',];
     protected $dateFormat='Y-m-d H:i:s';
-
+    //登录判断
     public static function login($name, $password){
         $user = new User();
 
@@ -31,9 +32,19 @@ Class User extends Model {
             return false;
         }
     }
-
+    //加密密码
     protected function setPasswordAttr($value){
         return md5($value);
     }
-
+    //删除用户以及她的所有发言和评论
+    public static function deleteUser($uid) {
+        $mid = \think\Db::name('message')->where('author',"=",$uid)->column('id');
+        if(User::getByUid($uid)->delete()){
+            Message::deleteData($mid);
+            \think\Db::name('comment')->where('author_id',$uid)->delete();
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

@@ -59,7 +59,7 @@ class IndexController extends Controller {
                 $this->success("成功设置其为管理员!","/admin_user_change","",1);
             }
         }elseif($mode==2){
-            if($user->delete()){
+            if(User::deleteUser($uid)){
                 $this->success("删除成功!","/admin_user_change","",1);
             }else{
                 $this->error("删除失败!","/admin_user_change","",2);
@@ -75,8 +75,7 @@ class IndexController extends Controller {
     public function admin_message_delete($mid = -1) {
         $this->checkAccess();
         if($mid!=-1){
-            if(Message::getById($mid)->delete()){
-                \think\Db::execute("delete from blog_comment WHERE message_id = ? ",[$mid]);
+            if(Message::deleteData($mid)){
                 $this->success("删除成功!","/admin_message_delete","",1);
             }else{
                 $this->error("删除失败!","/admin_message_delete","",2);
