@@ -2749,3 +2749,200 @@
 [ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\Index\index.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:48:16+08:00 ] 0.0.0.0 ::1 GET /
+[ info ] localhost/ [运行时间：0.041414s][吞吐率：24.15req/s] [内存消耗：1,886.45kb] [文件加载：45]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\GuestBook\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:48:19+08:00 ] 0.0.0.0 ::1 GET /index/Register/register
+[ info ] localhost/index/Register/register [运行时间：0.049488s][吞吐率：20.21req/s] [内存消耗：3,088.76kb] [文件加载：55]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\RegisterController->register[ E:\GuestBook\application\index\controller\RegisterController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\index\Register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:48:20+08:00 ] 0.0.0.0 ::1 GET /index
+[ info ] localhost/index [运行时间：0.033192s][吞吐率：30.13req/s] [内存消耗：1,886.53kb] [文件加载：45]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index/Register/register',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\GuestBook\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-21T12:48:23+08:00 ] 0.0.0.0 ::1 POST /index/Login/login
+[ info ] localhost/index/Login/login [运行时间：0.055791s][吞吐率：17.92req/s] [内存消耗：2,963.95kb] [文件加载：54]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'UserName' => 'zhangzewei',
+  'Password' => 'acs977282',
+)
+[ info ] [ RUN ] app\index\controller\LoginController->login[ E:\GuestBook\application\index\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[E:\GuestBook\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2017-11-21T12:48:26+08:00 ] 0.0.0.0 ::1 GET /index
+[ info ] localhost/index [运行时间：0.033762s][吞吐率：29.62req/s] [内存消耗：1,887.33kb] [文件加载：45]
+[ info ] [ LANG ] E:\GuestBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://localhost/index/Register/register',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5444240384; Phpstorm-19bd4bd9=4f7722b3-e665-4954-a188-10483335f4ff; BJYSESSION=eou7fcavugt56mrk62lvrf6u04; PHPSESSID=bn14m83i8iuptuo5uq0u2ival5; read=think%3A%7B%2217%22%3A%221510451420%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\GuestBook\application\index\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'blog_',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 1296000,
+  'use_trans_sid' => 1,
+)
+[ info ] [ VIEW ] E:\GuestBook\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
