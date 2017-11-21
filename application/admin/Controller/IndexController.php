@@ -76,6 +76,7 @@ class IndexController extends Controller {
         $this->checkAccess();
         if($mid!=-1){
             if(Message::getById($mid)->delete()){
+                \think\Db::execute("delete from blog_comment WHERE message_id = ? ",[$mid]);
                 $this->success("删除成功!","/admin_message_delete","",1);
             }else{
                 $this->error("删除失败!","/admin_message_delete","",2);
